@@ -1,0 +1,204 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+.el-dialog__body {
+  padding: 20px 20px;
+  color: #606266;
+  font-size: 14px;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app{
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus{
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+.warn-content{
+  background: rgba(66,185,131,.1);
+  border-radius: 2px;
+  padding: 16px;
+  padding: 1rem;
+  line-height: 1.6rem;
+  word-spacing: .05rem;
+  a{
+    color: #42b983;
+    font-weight: 600;
+  }
+}
+
+//main-container全局样式
+.app-main{
+  min-height: 100%
+}
+
+.app-container {
+  padding: 20px;
+}
+.el-button--mini, .el-button--mini.is-round {
+  padding: 7px 10px;
+}
+.head-container {
+  padding-bottom: 10px;
+  .filter-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+  input {
+    height: 30.5px;
+    line-height: 30.5px;
+  }
+  .el-input__icon {
+    line-height: 31px;
+  }
+  .el-input__inner {
+    padding: 0 10px;
+  }
+}
+
+.el-avatar {
+  display: inline-block;
+  text-align: center;
+  background: #ccc;
+  color: #fff;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 16px;
+}
+
+.badge {
+  position: relative;
+  display: inline-block;
+  padding: 0 6px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #2F4056;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.badge-bg-orange {
+  background-color: #FF5722!important;
+}
+.head-container .el-input__inner, .el-select-dropdown .el-select-dropdown__item{
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+}
+.head-container .el-input__icon, .el-date-editor .el-range-input, .el-date-editor .el-range-separator{
+  float: left;
+  font-size: 12px;
+  height: 26px;
+  line-height: 26px;
+}
+.head-container .el-range-editor.el-input__inner{
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  padding: 0px 5px;
+  font-size: 12px;
+}
+.head-container .el-date-editor .el-range__icon{
+  margin-left: -5px;
+}
+.head-container .el-date-editor .el-range-input{
+  width: 40%;
+}
+.my-blockquote{
+  margin: 0px 0px 10px;
+  padding: 15px;
+  line-height: 24px;
+  border-left: 5px solid #409EFF;;
+  border-radius: 0 2px 2px 0;
+  background-color: #f2f2f2;
+}
+.my-blockquote .filter-item{
+  margin-right: 5px;
+}
+.my-blockquote.statistics .text{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  height: 24px;
+  line-height: 24px;
+}
+.my-blockquote.statistics span.el-tag{
+  height: 24px;
+  padding: 0 5px;
+  line-height: 24px;
+  margin-right: 10px;
+  min-width: 80px;
+}
+.my-blockquote .text{
+  color: #999;
+}
+.el-input-group__append, .el-input-group__prepend{
+  padding: 0 15px;
+}
